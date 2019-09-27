@@ -2,18 +2,18 @@
 CircuitPython assignments
 
 button_lcd:
-   an lcd displays the number of button presses 
+   an lcd displays the number of button presses, 
    a switch determines if the count is increasing or decreasing
 
 captouch_servo:
-   servo spins a certain direction depending on which wire is being touched
+   servo spins a certain direction depending on which wire is being touched,
    if no wire is touched then it stays still
 
 fading_led:
    code uses a pwm to fade an led
 
 photointerrupter:
-   keeps track on the number of times a photointerrupter has been blocked
+   keeps track on the number of times a photointerrupter has been blocked,
    displays the count every four seconds
 
 rgb:
