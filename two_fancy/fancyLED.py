@@ -1,4 +1,4 @@
-from digitalio import DigitalInOut, Direction
+from digitalio import DigitalInOut, Direction #pylint: disable-msg=import-error
 import time
 
 class FancyLED:
@@ -13,6 +13,7 @@ class FancyLED:
 
      def alternate(self):
         for x in range(0, 5):
+            print(x)
             self.LED1.value = True
             self.LED2.value = False
             self.LED3.value = False
@@ -24,9 +25,11 @@ class FancyLED:
             self.LED1.value = False
             self.LED2.value = False
             self.LED3.value = True
+            time.sleep(1)
           
      def blink(self):
          for x in range(0, 5):
+            print(x)
             self.LED1.value = True
             self.LED2.value = True
             self.LED3.value = True
@@ -34,19 +37,39 @@ class FancyLED:
             self.LED1.value = False
             self.LED2.value = False
             self.LED3.value = False
+            time.sleep(1)
+            
 
      def chase(self):
-        for x in range(0, 5):
+        for x in range(0, 10):
+            print(x)
             self.LED1.value = True
             self.LED2.value = False
             self.LED3.value = False
-            time.sleep(.05)
+            time.sleep(.1)
             self.LED1.value = False
             self.LED2.value = True
             self.LED3.value = False
-            time.sleep(.05)
+            time.sleep(.1)
             self.LED1.value = False
             self.LED2.value = False
             self.LED3.value = True
+            time.sleep(.1)
 
-   #  def sparkle(self):
+     def off(self):
+        self.LED1.value = False
+        self.LED2.value = False
+        self.LED3.value = False
+        time.sleep(3)
+
+     def sparkle(self):
+         for x in range(0, 30):
+            print(x)
+            self.LED1.value = True
+            self.LED2.value = True
+            self.LED3.value = True
+            time.sleep(.05)
+            self.LED1.value = False
+            self.LED2.value = False
+            self.LED3.value = False
+            time.sleep(.05)

@@ -1,4 +1,4 @@
-import board
+import board #pylint: disable-msg=import-error
 import time
 from fancyLED import FancyLED
 
@@ -14,6 +14,10 @@ fancy2 = FancyLED(five, six, seven)
 
 while True:
     fancy1.alternate()
+    fancy1.off()
     fancy2.blink()
+    fancy2.off()
     fancy1.chase()
+    fancy1.off()
     fancy2.sparkle()
+    fancy2.off()
