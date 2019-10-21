@@ -1,4 +1,4 @@
-import board
+import board #pylint: disable-msg=import-error
 import time
 from rgb import RGB
 
