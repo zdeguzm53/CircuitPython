@@ -37,6 +37,13 @@
    - *Reflections*
 
 
+- RGB
+   - *Overview*
+   \
+     This file contains both the class rgb and the tester. The class contains the constructor to create an led object, as well as methods that can change the color of the led by assigning it different values for red, green, and blue. The class gets imported into the tester in order to minimize the amount of necessary code in the main file. It creates a real RGB object out of the class and employs the different methods that were created.
+      
+   - *Wiring Diagram*
+   - *Reflections*
 
 rgb:
    contains the class rgb and the tester
