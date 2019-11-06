@@ -19,13 +19,24 @@
    - *Reflections*
 
 
+- FADING_LED
+   - *Overview*
+   \
+      The code uses a pwm to continuously alter the brightness value of the led, resulting in a fading effect.
+      
+   - *Wiring Diagram*
+   - *Reflections*
 
-fading_led:
-   code uses a pwm to fade an led
 
-photointerrupter:
-   keeps track on the number of times a photointerrupter has been blocked,
-   displays the count every four seconds
+- PHOTOINTERRUPTER
+   - *Overview*
+   \
+      This keeps track of the number of times a photointerrupter's led has been blocked, and then will display the running total on the       serial monitor every four seconds. 
+      
+   - *Wiring Diagram*
+   - *Reflections*
+
+
 
 rgb:
    contains the class rgb and the tester
