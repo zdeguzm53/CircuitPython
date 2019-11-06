@@ -1,5 +1,5 @@
 # CircuitPython
-- CircuitPython Assignments -
+- CircuitPython Assignments 
 
 BUTTON_LCD:
 
