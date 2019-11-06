@@ -45,9 +45,6 @@
    - *Wiring Diagram*
    - *Reflections*
 
-rgb:
-   contains the class rgb and the tester
-   has functions to intialize the led and change the color
 
 ultrasonic_sensor:
    led on metro fades into different colors depending on the distance of an object from the sensor
