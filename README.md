@@ -2,7 +2,6 @@
 ### CircuitPython Assignments 
 
 - BUTTON_LCD:
-\
    - **Overview**
    \
       An lcd displays the number of button presses, and a switch determines if the count is increasing or decreasing.
