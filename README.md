@@ -27,7 +27,8 @@
       
    - *Wiring Diagram*
    - *Reflections*
-
+   \
+   This assignment was really straightforward, the only new syntax I used was the "elif" command, which is similar to an "else" statement.
 
 - PHOTOINTERRUPTER
    - *Overview*
