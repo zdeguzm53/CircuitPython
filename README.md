@@ -18,7 +18,8 @@
       
    - *Wiring Diagram*
    - *Reflections*
-
+   \
+   A new initializer, touchio, was used to declare the location of the wires that would change the direction of the servos when they are touched.
 
 - FADING_LED
    - *Overview*
