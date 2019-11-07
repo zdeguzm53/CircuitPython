@@ -46,5 +46,29 @@
    - *Reflections*
 
 
-ultrasonic_sensor:
-   led on metro fades into different colors depending on the distance of an object from the sensor
+- ULTRASONIC_SENSOR
+   - *Overview*
+   \
+     The circuitpython metro device comes with an internal RGB led, so it was unnecessary to wire an additional RGB led for this assignment. An HCSR04 ultrasonic sensor judges the distance of an object in centimeters, and then changes the color of the led based on that number. The light fades between colors by adjusting the values of red, green, and blue. If the distance is too large and out of range, it throws a runtime error and prints "Retrying" until the object is close enough to the sensor. Otherwise, it will just print the distance on the serial monitor. 
+      
+   - *Wiring Diagram*
+   - *Reflections*
+
+
+- TWO_FANCY
+   - *Overview*
+   \
+     This folder contains two files: the class fancyLED and the main runner two_fancy. A fancyLED object is simply 3 separately wired leds that interact with each other because of the code in the class. It contains a contstructor and 5 methods: alternate(), blink(), chase(), sparkle(), and off(). The main file just declares a real object from the pin numbers of wired leds and calls the methods from the class.   
+      
+   - *Wiring Diagram*
+   - *Reflections*
+
+
+- HELLO_VS_CODE
+   - *Overview*
+   \
+     This assignment was simply to test the program VS Code, so it didn't use the metro or a complicated code. The code I decided to write analyzed the number of seconds that passed since running it, then printed that value if it was an integer. 
+      
+   - *Reflections*
+
+
