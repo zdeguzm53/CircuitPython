@@ -19,7 +19,7 @@
    - *Wiring Diagram*
    - *Reflections*
    \
-   A new initializer, touchio, was used to declare the location of the wires that would change the direction of the servos when they are touched.
+   A new initializer, touchio, was used to declare the location of the wires that would change the direction of the servos when they are touched. The only issue that occurred was needing to change the boundaries of the servo in the code. If it reached 180 or 0 degrees then the program would throw an error statement. I ended up changing the limits to 179.9 and 0.1.
 
 - FADING_LED
    - *Overview*
@@ -38,7 +38,8 @@
       
    - *Wiring Diagram*
    - *Reflections*
-
+   \
+   The code and wiring for this assignment was relatively easy because we have used photointerrupters before. But the one aspect that required some additional research was finding an method to delay the serial monitor output without using time.sleep(). I used time.monotonic(), which records the time in seconds since the program began running. I also used mod (%) which calculates the remainder of a division expression. 
 
 - RGB
    - *Overview*
@@ -47,6 +48,8 @@
       
    - *Wiring Diagram*
    - *Reflections*
+   \
+   One of the errors I made was assigning the wrong values to red, green, and blue. Because of the way the leds were wired, a value of 255 for a color would pull it to ground, which would turn it off. So the brightest colors within the led would actually be the ones with a value closest to zero. Until I fixed this, the led would display the opposite of the intended color. The red() function would actually turn it cyan, and the yellow() function would turn it blue.
 
 
 - ULTRASONIC_SENSOR
