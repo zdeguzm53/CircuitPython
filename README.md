@@ -59,7 +59,8 @@
       
    - *Wiring Diagram*
    - *Reflections*
-
+   \
+   At first I used if/else statements to change the color based on the distance range that it was in, but then I changed the code to add or substract red, green, and blue values based on if the distance increased or decreased. These values were kept track of with a for loop, and resulted in the led fading colors instead of just switching between them abruptly.
 
 - TWO_FANCY
    - *Overview*
@@ -68,7 +69,8 @@
       
    - *Wiring Diagram*
    - *Reflections*
-
+   \
+   Aside from having to wire six separate leds to the breadboard, the wiring and code was very straightforward. Once it was working I just experimented with the code to get the effect I wanted.
 
 - HELLO_VS_CODE
    - *Overview*
@@ -76,5 +78,6 @@
      This assignment was simply to test the program VS Code, so it didn't use the metro or a complicated code. The code I decided to write analyzed the number of seconds that passed since running it, then printed that value if it was an integer. 
       
    - *Reflections*
-
+   \
+   VS Code was a different program than the one we had been using, but the syntax was still the same. The only major difference is that you have to write *#pylint: disable-msg=import-error* when importing a library. It is also easier to upload to GitHub with this program because it allows you to add and commit your changes immediately, as opposed to having to open GitBash and go through a long process.
 
