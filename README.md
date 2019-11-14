@@ -9,7 +9,7 @@
       
    - *Wiring Diagram*
    \
-   ![button_lcd_pic](pictures/button_lcd_pic.png)
+   ![button_lcd_pic](/pictures/button_lcd_pic.PNG)
    - *Reflections*
    \
    I think a confusing aspect of this was the fact that the switch or button value was considered "True" if it was off. This resulted in a few minor mistakes, such as the button counting the number of the time it *wasn't* pressed instead. Other than that, it was pretty simple; the only major error made at first was that the wrong type of LCD was initially declared so it couldn't compile. 
