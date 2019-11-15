@@ -80,6 +80,8 @@
      This folder contains two files: the class fancyLED and the main runner two_fancy. A fancyLED object is simply 3 separately wired leds that interact with each other because of the code in the class. It contains a contstructor and 5 methods: alternate(), blink(), chase(), sparkle(), and off(). The main file just declares a real object from the pin numbers of wired leds and calls the methods from the class.   
       
    - *Wiring Diagram*
+   \
+   ![two fancy_pic](/pictures/two_fancy_pic.PNG)
    - *Reflections*
    \
    Aside from having to wire six separate leds to the breadboard, the wiring and code was very straightforward. Once it was working I just experimented with the code to get the effect I wanted.
