@@ -19,6 +19,8 @@
       A servo spins in a certain direction depending on which wire is being touched, and if no wire is touched it stays still. The servo        being used isn't continuous, so when it has traveled 180 degrees without a command for a direction change, it will quickly turn back      and start the cycle again.
       
    - *Wiring Diagram*
+   \
+   ![captouch servo_pic](/pictures/captouch_servo_pic.PNG)
    - *Reflections*
    \
    A new initializer, touchio, was used to declare the location of the wires that would change the direction of the servos when they are touched. The only issue that occurred was needing to change the boundaries of the servo in the code. If it reached 180 or 0 degrees then the program would throw an error statement. I ended up changing the limits to 179.9 and 0.1.
@@ -29,6 +31,8 @@
       The code uses a pwm to continuously alter the brightness value of the led, resulting in a fading effect.
       
    - *Wiring Diagram*
+   \
+   ![fading led_pic](/pictures/fading_led_pic.PNG)
    - *Reflections*
    \
    This assignment was really straightforward, the only new syntax I used was the "elif" command, which is similar to an "else" statement.
@@ -39,6 +43,8 @@
       This keeps track of the number of times a photointerrupter's led has been blocked, and then will display the running total on the       serial monitor every four seconds. 
       
    - *Wiring Diagram*
+   \
+   ![photointerrupter_pic](/pictures/photointerrupter_pic.PNG)
    - *Reflections*
    \
    The code and wiring for this assignment was relatively easy because we have used photointerrupters before. But the one aspect that required some additional research was finding an method to delay the serial monitor output without using time.sleep(). I used time.monotonic(), which records the time in seconds since the program began running. I also used mod (%) which calculates the remainder of a division expression. 
@@ -49,6 +55,8 @@
      This file contains both the class rgb and the tester. The class contains the constructor to create an led object, as well as methods that can change the color of the led by assigning it different values for red, green, and blue. The class gets imported into the tester in order to minimize the amount of necessary code in the main file. It creates a real RGB object out of the class and employs the different methods that were created.
       
    - *Wiring Diagram*
+   \
+   ![rgb_pic](/pictures/rgb_pic.PNG)
    - *Reflections*
    \
    One of the errors I made was assigning the wrong values to red, green, and blue. Because of the way the leds were wired, a value of 255 for a color would pull it to ground, which would turn it off. So the brightest colors within the led would actually be the ones with a value closest to zero. Until I fixed this, the led would display the opposite of the intended color. The red() function would actually turn it cyan, and the yellow() function would turn it blue.
@@ -60,6 +68,8 @@
      The circuitpython metro device comes with an internal RGB led, so it was unnecessary to wire an additional RGB led for this assignment. An HCSR04 ultrasonic sensor judges the distance of an object in centimeters, and then changes the color of the led based on that number. The light fades between colors by adjusting the values of red, green, and blue. If the distance is too large and out of range, it throws a runtime error and prints "Retrying" until the object is close enough to the sensor. Otherwise, it will just print the distance on the serial monitor. 
       
    - *Wiring Diagram*
+   \
+   ![ultrasonic sensor_pic](/pictures/ultrasonic_sensor_pic.PNG)
    - *Reflections*
    \
    At first I used if/else statements to change the color based on the distance range that it was in, but then I changed the code to add or substract red, green, and blue values based on if the distance increased or decreased. These values were kept track of with a for loop, and resulted in the led fading colors instead of just switching between them abruptly.
